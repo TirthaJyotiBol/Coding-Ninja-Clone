@@ -1,0 +1,418 @@
+@media (max-width:425px){
+    html{
+        background-color:black
+    }
+    body{
+        max-width: 425px;
+        overflow-x: hidden;
+        margin-left: -0.6px;
+    }
+    #heading-section {
+        height: 105vh;
+        flex-direction: column;
+    }
+
+    #right-part-heading img {
+        height: 37vh;
+        width: 81%;
+        left: -39%;
+        margin-top: 314px;
+        animation: none;
+    }
+
+    #left-part-heading {
+        width: 94%;
+        margin-left: 3%;
+        margin-top: 10%;
+    }
+
+    #explore-programs-button {
+        width: 75%;
+        height: 3.5rem;
+        margin-left: 11%;
+    }
+
+    #heading-coding-ninja {
+        font-size: 30px;
+        color: rgb(255, 149, 0);
+        margin-left: 9%;
+        font-size: 3rem;
+    }
+    #heading-description {
+        color: white;
+        margin-top: 40px;
+        font-size: 22px;
+        margin-left: 5%;
+        overflow-wrap: break-word;
+        flex-wrap: wrap;
+        width: 83%;
+        margin-bottom: 8px;
+        display: flex;
+        text-align: justify;
+    }
+
+    #banner {
+        border: 1px solid transparent;
+        border-radius: 0;
+        width: 100%;
+        height: 185px;
+    }
+
+    img#banner-student {
+        width: 89%;
+        margin-left: 6%;
+        height: 192px;
+        display: none;
+    }
+
+    #placement-stats-student-comments {
+        width: 93vw;
+    }
+    #alumini-hear-button button {
+        width: 301px;
+        margin-left: 15%;
+    }
+    #placement-report img {
+        height: 99%;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 7%;
+    }
+
+    h3#heading-companies {
+        margin-top: 14%;
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+    #download-pdf-button a button {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 134%;
+        height: 34px;
+        font-size: 1rem;
+        margin-left: -30px;
+    }
+
+    .rating-box {
+        height: 40vh;
+        width: 74vw;
+    }
+    .one-stop-platform heading {
+        margin-left: 11%;
+    }
+    .desc-header {
+        margin-left: 26px;
+    }
+    /* .section {
+        position: absolute;
+        top: 38%;
+        visibility: hidden;
+        display: flex;
+        margin-left: -15%;
+        width: 135%;
+        font-size: 11px;
+    } */
+    .section {
+        position: absolute;
+        top: 38%;
+        visibility: hidden;
+        display: flex;
+        margin-left: -15%;
+        flex-direction: column;
+        width: 135%;
+        font-size: 11px;
+    }
+    #one-stop-navbar {
+        margin-left: -52px;
+        margin-top: 3%;
+        width: 119%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 25px;
+        max-height: 49px;
+    }
+    #one-stop-navbar label {
+        margin: 0px;
+        padding-bottom: 8px;
+        text-align: center;
+        width: 33%;
+        font-size: 9px;
+    }
+
+    #left-guide {
+        margin-top: 4%;
+        width: 98%;
+        height: 393px;
+    }
+
+    #right-guide {
+        width: 94%;
+        height: 308px;
+    }
+
+    .course-section {
+        width: 97%;
+        margin-top: 122%;
+        margin-left: 3%;
+        margin-bottom: 53%;
+    }
+
+    .course-box {
+        max-width: 70vw;
+        width: 250px;
+        height: 183px;
+    }
+    .course-heading {
+        font-size: 2.4rem;
+        font-weight: 600;
+        margin-left: 13%;
+    }
+    #recommended-course > h2 {
+        margin-top: 10px;
+        margin-bottom: 2%;
+        font-size: 1.1rem;
+        text-align: center;
+        margin-left: -16%;
+    }
+    .all-course-body-section navbar-course {
+        cursor: pointer;
+        color: black;
+        display: flex;
+        margin-top: 2%;
+        justify-content: space-around;
+        font-size: 40px;
+        flex-direction: column;
+        width: 112%;
+        margin-top: 35%;
+        font-weight: 600;
+        color: black;
+        margin-bottom: 31%;
+        text-transform: uppercase;
+        margin-left: 30px;
+        text-align: justify;
+        width: 84%;
+    }
+
+    .all-course-body-section navbar-course a {
+        color: black;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 28px;
+    }
+
+    .all-course-body-section navbar-course a:hover{
+        border: none;
+    }
+    
+    .body-section-course {
+        width: 123%;
+        display: flex;
+        margin-top: 2%;
+        margin-left: -10%;
+        overflow-x: scroll;
+    }
+
+    .queries {
+        flex-direction: column;
+    }
+
+    .lhs-queries {
+        width: 76%;
+        max-width: 98%;
+        margin-left: 12%;
+        margin-right: 10%;
+    }
+
+    .queries .rhs-queries form {
+        background-color: white;
+        width: 268px;
+        height: 295px;
+        margin-top: 22%;
+        margin-left: 32%;
+        padding: 12%;
+    }
+
+    .news-coding-ninjas {
+        width: 85vw;
+        margin-left: 6%;
+        margin-bottom: 5%;
+        position: relative;
+        margin-top: 59%;
+    }
+
+    coding-news-heading h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .scroll-checkbox:checked + .scroll-container .scroll-content {
+        transform: translateX(-380px);
+      }
+
+      .news-box p {
+        display: none;
+    }
+    /* .news-iframe {
+        width: 100%;
+        height: 42vh;
+        flex-direction: column;
+        display: flex;
+        margin-left: 1%;
+    } */
+
+    .news-iframe {
+        width: 105%;
+        height: 75vh;
+        flex-direction: column-reverse;
+        display: flex;
+        margin-left: -5%;
+        padding-bottom: 11%;
+    }
+    #description-frame {
+        display: none;
+    }
+    
+    #header-news-frame {
+        display: none;
+    }
+
+    #upcoming-events upcomingEventsHeader h1 {
+        margin-left: 8%;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+    #frame-video {
+        width: 100%;
+        margin-left: 4%;
+    }
+
+    #right-scroll-icon {
+        position: absolute;
+        left: 100%;
+        top: 18%;
+        font-size: 25px;
+    }
+
+    #upcoming-events upcomingEventsHeader h1 {
+        margin-left: 8%;
+        font-size: 2.5rem;
+        margin-top: -54%;
+        margin-bottom: 8%;
+        text-transform: uppercase;
+    }
+
+
+    Footer-Links {
+        height: max-content;
+        padding-bottom: 10%;
+    }
+
+    #links {
+        display: flex;
+        flex-direction: column;
+        padding-top: 3%;
+        color: white;
+        font-size: 2.5rem;
+        margin-left: 8%;
+    }
+
+    #logo-section img {
+        width: 209%;
+        color: white;
+        height: 49%;
+        margin-left: 45%;
+    }
+    div#coding-ninjas-section {
+        margin-left: 6%;
+        margin-bottom: 15%;
+    }
+
+    #links a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 32px;
+        transition: all 0.8s ease-in-out;
+    }
+
+    .heading-links {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    #products-section, #community-section, #social-links-section {
+        margin-left: 6%;
+        margin-bottom: 15%;
+    }
+
+    .link-section-one {
+        display: flex;
+        margin-bottom: 5px;
+        flex-wrap: wrap;
+        margin-top: 8%;
+    }
+
+    .bottom-payments {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 8%;
+    }
+
+    #left-payment {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-right: 25%;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #right-payment {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: 10px;
+    }
+    #right-payment p {
+        background-color: #0A6DFF;
+        padding-left: 14px;
+        padding-right: 14px;
+        color: white;
+        border-radius: 4px;
+        height: 20px;
+        margin-bottom: 6%;
+        padding: auto;
+    }
+
+
+    /* Trial */
+
+    .bottom-payments {
+        width: 62%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 23%;
+        height: 55vh;
+        margin-top: 13%;
+    }
+
+    #right-payment p {
+        display: none;
+    }
+
+    #left-payment img, #right-payment img {
+        height: 40px;
+        width: 128px;
+        margin-left: 37px;
+        margin-top: 3%;
+    }
+
+    #left-payment p {
+        width: max-content;
+        font-size: 2rem;
+        margin-left: -19%;
+        text-transform: uppercase;
+    }
+    
+    
+}

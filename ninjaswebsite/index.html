@@ -1,0 +1,1816 @@
+  <!-- 
+
+    Check List:
+
+    Normal Desktop screen:
+
+    1. Hover over the navbar elements
+    2. Dynamic content writer and moving - Image using animation
+    3. Hover over the student Placement report above the alumini button
+    4. click on the download Placement report button to download pdf
+    5. In one stop platform click on the navbar elements to dynamically change content
+    6. click on the navbar of All courses to dynamically view the elements
+    7. click on the left and right button to display the news section
+    8. upcoming events slider
+    
+    
+    TABLE 768px
+    1. click on the hamburger icon (menu icon)
+    2. click on the placement report of students
+    3. Other feature are same as previous mode
+
+    -- Also customised for multiple mobile screens (425px , 375px , 320px)
+
+   -->
+  
+  
+  <!DOCTYPE html>
+    <html lang="en">
+
+    <!-- Head Tag 
+            - Elements of all device resolution (l,m,s,xs) PC(normal size) , Tablet , Mobile Phone , Small Mobile , Extra small mobile devices
+            - CSS Links are attached
+        -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title  -->
+        <title>Coding Ninjas | Home</title>
+
+        <!-- Fav icon -->
+        <link rel="shortcut icon" href="/assets/Image/Coding_Ninjas_logo_favicon.jpeg" type="image/x-icon">
+
+        <!-- responsiveness viewpost to initial scale 1.0 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+        <!-- All CSS for different resolutions -->
+        <link rel="stylesheet" href="/assets/css/index.css">
+        <link rel="stylesheet" href="/assets/css/tab.css">
+        <link rel="stylesheet" href="/assets/css/mobile.css">
+        <link rel="stylesheet" href="/assets/css/small-devices.css">
+        <link rel="stylesheet" href="/assets/css/x-small-device.css">
+    </head>
+
+
+    <body>
+
+        <!-- Navbar Parent  -->
+        <TrialHeader class="navbar-parent">
+            <!-- Navber
+                - Fixed Navbar
+                -Logo
+                -Different sections with dropdown on hover
+                - Avatar on Login Icon
+            -->
+            <div class="navbars">
+                <div class="logo">
+                    <a href="">
+                        <img id="heading-cn-logo" src="/assets/Image/logo.png" alt="">
+                    </a>
+                </div>
+
+                <!-- Course button dropdown
+                     - On Hover Display the Elements
+                -->
+                <div class="dropdown">
+                    <button class="dropdown-btn display-none">Courses <i class="fa-solid fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Data Structures and Algorithm</a>
+                        <a href="#">Complete Web development</a>
+                        <a href="#">Interview Preparation</a>
+                        <a href="#">MERN STACK</a>
+                        <a href="#">Competitive Programming</a>
+                        <a href="#">Databse Management System</a>
+                    </div>
+                </div>
+                <div class="dropdown display-none">
+                    <button class="dropdown-btn">Scholarship</button>
+                </div>
+
+                <!-- Community Dropdown Button
+                        - Hover on the varoius images on the Dropdown to avail transform scale
+                -->
+                <div class="dropdown display-none">
+                    <button class="dropdown-btn">community <i class="fa-solid fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <div class="sections">
+                            <div class="section1">
+                                <p class="event-name-heading">
+                                    Event 1
+                                </p>
+                                <p class="event-name-heading">
+                                    Event 2
+                                </p>
+                                <p class="event-name-heading">
+                                    Event 3
+                                </p>
+                                <p class="event-name-heading">
+                                    Live Scholarship Test
+                                </p>
+                                <p class="event-name-heading">
+                                    Event 9
+                                </p>
+                            </div>
+                            <div class="section2">
+                                <img src="/assets/Image/microsoft.jpg" alt="">
+                                <img src="/assets/Image/google-logo.png" alt="">
+                                <img src="/assets/Image/samsung.avif" alt="">
+                                <img src="/assets/Image/morgan.png" alt="">
+                                <img src="/assets/Image/adobe.jpg" alt="">
+                                <img src="/assets/Image/news3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Practice Navbar Button -->
+                <div class="dropdown display-none">
+                    <button class="dropdown-btn">Practice <i class="fa-solid fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Coding Ninjas Studio</a>
+                        <a href="#">Hands On Practice with TA</a>
+                        <a href="#">Codekaze</a>
+                    </div>
+                </div>
+                
+                <!-- Bootcamp Join Logo -->
+                <div class="bootcamp display-none">
+                    <img src="/assets/Image/applications-bootcamp-logo.png" alt="">
+                </div>
+
+                <div class="myClassroom display-none">
+                    <p>My Classroom</p>
+                </div>
+                <!-- Avatar -->
+                <div class="user-avatar">
+                    <img src="/assets/Image/avatar.jpg" alt="">
+                </div>
+                <button class="enroll-btn">Enroll Now</button>
+            </div>
+    
+        </TrialHeader>
+
+        <!-- 
+            Hamburger Menu for Tablet and mobile devices
+            Initially display none
+            using media queries on change of display the icon gets visible
+        -->
+        <div class="hamburger">
+            <i class="fa-solid fa-bars myDIV"></i>
+            <!-- hamburger items -->
+            <div class="contents hide">
+                <p>Course</p>
+                <p>Practice</p>
+                <p>Job Boorcamp</p>
+                <p>Events</p>
+                <p>Community</p>
+                <p>Classroom</p>
+            </div>
+        </div>
+   
+
+
+    <!-- Banner heading section -->
+    <div id="heading-section">
+        <section id="left-part-heading">
+            <!-- Automatic typing using animation -->
+            <div id="writing-container">
+                <h2 id="dynamic-writing-content">Chasing jobs ? Let the job chase you</h2>
+            </div>
+            <!-- Description -->
+            <h1 id="heading-coding-ninja">Be a Coding Ninja</h1>
+            <p id="heading-description">50,000 Students from 300 colleges have trusted us</p>
+            <a href="">
+                 <button id="explore-programs-button" type="submit">Explore our programs</button>
+            </a>
+        </section>
+
+        <!-- Automatic floating image -->
+        <section id="right-part-heading">
+            <img src="/assets/Image/header-animated-image.webp" alt="">
+        </section>
+
+    </div>
+
+    <!-- Banner 
+        Banner of the Features / Advantages of Joining
+    -->
+    <div id="heading-banner">
+        <img id="banner" src="/assets/Image/mid-section-banner.png" alt="banner..">
+    </div>
+
+    <!-- Scolarship Banner -->
+    <div id="student-banner">
+        <a href="">
+            <img id="banner-student" src="/assets/Image/banner-student.svg" alt="banner...">
+        </a>
+        <div id="banner-text">
+            14,000+ CODING NINJAS TO INSPIRE YOU
+        </div>
+    </div>
+
+
+    <!-- Placement Report shows on hover -->
+    <div id="placement-stats-student-comments">
+
+         <!-- 
+            For all the 5 students the elements are same 
+         -->
+
+
+        <!-- Student 1 -->
+        <div class="image-container-student student1" id="student-box-placement">
+
+            <!-- Heading of the placement report -->
+            <div class="heading-student-placement">
+                CS Novice to google
+            </div>
+
+            <!-- Student Comment on C.N. -->
+            <div class="description-student-placement">
+                <p>
+                    Despite being from a tier 3 college, I would like to thank my mentors & teachers at 
+                    Coding Ninjas who helped me land a job at Google. 
+                    Both Parikh sir and Ankush sir are brilliant teachers who know how to explain difficult concepts in an easy way.
+                </p>
+            </div>
+
+            <!-- Bottom Placement report containing Student details and Image -->
+            <div class="bottom-section-placement-report">
+
+                <!-- Student details -->
+                <div class="student-details">
+                    <p id="name-student">Pareksha Manchanda</p>
+                    <p id="jobrole-student">Software Engineer</p>
+
+                    <!-- Company Image -->
+                    <img src="/assets/Image/google-logo.png" alt="Student company">
+                </div>
+
+                <!-- Student Image -->
+                <div class="student-image">
+                    <img src="/assets/Image/student1.png" alt="Student company">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Student 2 -->
+        <div class="image-container-student student2" id="student-box-placement">
+            <div class="heading-student-placement">
+                College Dropout to a Placement of 10LPA
+            </div>
+            <div class="description-student-placement">
+                <p>
+                    The experience and knowledge I learned at Coding Ninjas greatly sharpened my skills and allowed me to pass the HackerRank and technical interview rounds. 
+                </p>
+            </div>
+
+            <div class="bottom-section-placement-report">
+                <div class="student-details">
+                    <p id="name-student">Harsh Agrawal</p>
+                    <p id="jobrole-student">Software Engineer</p>
+                    <img src="/assets/Image/awalara-company.png" alt="Student company">
+                </div>
+
+                <div class="student-image">
+                    <img src="/assets/Image/student2.png" alt="Student company">
+                </div>
+            </div>
+        </div>
+
+        <!-- Student 3 -->
+        <div class="image-container-student student3" id="student-box-placement">
+            <div class="heading-student-placement">
+                Non CS Branch to top company
+            </div>
+            <div class="description-student-placement">
+                <p>
+                    My experience with Coding Ninjas was wonderful. The courses strengthened
+                     my concepts and helped me in my interviews. The faculty was amazing. 
+                     I would definitely recommend Coding Ninjas.
+                </p>
+            </div>
+
+            <div class="bottom-section-placement-report">
+                <div class="student-details">
+                    <p id="name-student">Swastika Bhattacharjee</p>
+                    <p id="jobrole-student">Software Engineer</p>
+                    <img src="/assets/Image/goldman-logo.png" alt="Student company">
+                </div>
+
+                <div class="student-image">
+                    <img src="/assets/Image/student3.png" alt="Student company">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Student 4 -->
+        <div class="image-container-student student4" id="student-box-placement">
+            <div class="heading-student-placement">
+                Tier-3 college to 6 stars on CodeChef
+            </div>
+            <div class="description-student-placement">
+                <p>
+                    It has been a crazy ride from being a novice CS student to a 6 star Coder and ICPC Regionalist
+                </p>
+            </div>
+
+            <div class="bottom-section-placement-report">
+                <div class="student-details">
+                    <p id="name-student">Rahul Lather</p>
+                    <p id="jobrole-student">Member of Technical Staff</p>
+                    <img src="/assets/Image/logo.png" alt="Student company">
+                </div>
+
+                <div class="student-image">
+                    <img src="/assets/Image/student4.png" alt="Student company">
+                </div>
+            </div>
+        </div>
+
+        <!-- Student 5 -->
+        <div class="image-container-student student5" id="student-box-placement">
+            <div class="heading-student-placement">
+                Non Engineer to Investment Bank
+            </div>
+            <div class="description-student-placement">
+                <p>
+                    Coding Ninjas is one of the best learning platforms. I enrolled into C++ Foundation with Data Structures.
+                    The way Ankush Sir and Nidhi Ma'am explain a topic is commendable
+                </p>
+            </div>
+
+            <div class="bottom-section-placement-report">
+                <div class="student-details">
+                    <p id="name-student">Richa Sharma</p>
+                    <p id="jobrole-student">SEP intern</p>
+                    <img src="/assets/Image/jp.jpg" alt="Student company">
+                </div>
+
+                <div class="student-image">
+                    <img src="/assets/Image/student5.png" alt="Student company">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<!-- Alumini Hears button -->
+    <div id="alumini-hear-button">
+        <button>Hear more stories from our alumini</button>
+    </div>
+
+    <!-- Placement report Banner -->
+    <div id="placement-report">
+        <img src="/assets/Image/why-join-us-banner.png" alt="loading">
+    </div>
+
+
+    <!-- Companies logo that Hire from Coding Ninjas -->
+    <div class="companies">
+        <!-- Heading -->
+        <h3 id="heading-companies">
+            Our Students are Placed at
+        </h3>
+        <!--
+             All the company Images
+            On hover the opacity of image decreases and cursor:pointer
+        -->
+        <div id="company">
+            <img src="/assets/Image/google-logo.png" alt="">
+            <img src="/assets/Image/microsoft.jpg" alt="">
+            <img src="/assets/Image/Facebook.png" alt="">
+            <img src="/assets/Image/adobe.jpg" alt="">
+            <img src="/assets/Image/walmart.png" alt="">
+            <img src="/assets/Image/amazon.jpg" alt="">
+            <img src="/assets/Image/oyo.jpg" alt="">
+            <img src="/assets/Image/samsung.avif" alt="">
+            <img src="/assets/Image/morgan.png" alt="">
+            <img src="/assets/Image/goldman-logo.png" alt="">
+        </div>
+    </div>
+
+
+    <!--
+         Change color section
+        From this section the backgroung color changes 
+        - All these are put inside a section to change colour once only
+    -->
+    <section class="change-color">
+
+        <!-- 
+            click on the button to visit the pdf page and can download pdf from there
+         -->
+        <div id="download-pdf-button">
+            <a href="/assets/pdf/placement-report.pdf" target="_blank">
+                <button>
+                    Download placement report <i class="fas fa-download download-icon-fa"></i>
+                </button>
+            </a>
+        </div>
+
+        <!-- Ratings Portion -->
+        <section class="ratings">
+
+            <!-- 
+                -Rating Box
+                -All 3 have same code and css
+            -->
+
+            <!-- Box1 -->
+            <div class="rating-box">
+                <div id="rate-number">4.9</div>
+                <div>
+                    <!-- stars -->
+                    <img class="rate-image" src="/assets/Image/rating-star.svg" alt="rating">
+                </div>
+                <!-- reviews -->
+                <div id="reviews">
+                    1000+ reviews
+                </div>
+                <!-- rate Application -->
+                <div class="rated-in">
+                    Facebook
+                </div>
+            </div>
+    
+            <!-- Box2 -->
+            <div class="rating-box">
+                <div id="rate-number">4.9</div>
+                <div>
+                    <img class="rate-image" src="/assets/Image/rating-star.svg" alt="rating">
+                </div>
+                <div id="reviews">
+                    1000+ reviews
+                </div>
+                <div class="rated-in">
+                    Google
+                </div>
+            </div>
+            <!-- Box3 -->
+            <div class="rating-box">
+                <div id="rate-number">50+</div>
+                <div id="questions-asked-quora">
+                    Questions Asked
+                </div>
+                <div id="reviews">
+                    500 Answered
+                </div>
+                <div class="rated-in">
+                    Quora
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 
+            -One stop Platform to see all the features and merits of joining C.N.
+            -Click on the various Nav Items to navigate different Fields
+            -using radio button and labels the navbar and dynamic single page routing is made
+         -->
+        <section class="one-stop-platform">
+            <!-- Heading -->
+            <heading class="one-stop-head">
+                A One Stop Platform
+                <br>
+                <span class="desc-header">
+                    Practice and learn till you are perfect 
+                </span>
+            </heading>
+
+            <!-- navbar down section -->
+            <!-- 
+                -using radio buttons input and label the input navbar is made
+                - when any button is clicked it gets checked
+                - button is made invisible and labels are used as navbar
+                - initially guide page is used as checked to display 
+             -->
+            <input type="radio" name="page" id="guide" checked>
+            <input type="radio" name="page" id="doubt">
+            <input type="radio" name="page" id="studio">
+            <input type="radio" name="page" id="mock-interview">
+            <input type="radio" name="page" id="placements">
+            <input type="radio" name="page" id="free-recources">
+
+            <!-- All the labels that act as navbar -->
+            <div id="one-stop-navbar">
+                <label for="guide" class="nav-link">guided program</label>
+                <label for="doubt" class="nav-link">Doubt Resolution</label>
+                <label for="studio" class="nav-link">Coding Ninjas Studio</label>
+                <label for="mock-interview" class="nav-link">Mock Interview</label>
+                <label for="placements" class="nav-link">Placements cell</label>
+                <label for="free-recources" class="nav-link">Free Resources</label>
+            </div>
+
+
+            <!-- Code of all the pages are same ,commented on a single page only -->
+
+                 <!--  Page 1 : Guide Page -->
+                <div id="guide-page" class="guide-page-elements section">
+
+                    <!-- LHS contains description -->
+                        <div id="left-guide">
+
+                            <!-- heading -->
+                            <header-one-stop >
+                                Well Guided Platform
+                            </header-one-stop>
+                            
+                            <!-- Sub Heading -->
+                            <div id="sub-header-one-stop">
+                                We have invented and perfected the best system to learn coding
+                            </div>
+                            
+                            <!-- Description of the page -->
+                            <div id="desc-one-page">
+                                Your Journey will follow a tried & Tested method that delivers the best results.
+                                 Each concept that you learn will follow the following structure
+                            </div>
+
+                        <!-- Different List items / checklist -->
+                            <ul id="list-one-stop">
+                                <!-- checklist icon from Font Awesome -->
+                                <li id="lists"><i class="fas fa-check checked-icon"></i> Very short learning videos: 10-15 minutes </li>
+                                <li id="lists"><i class="fas fa-check checked-icon"></i> 2-3 Guided Problems & 5-10 practice problems to understand: 45 minutes </li>
+                                <li id="lists"><i class="fas fa-check checked-icon"></i> Doubts resolved instantly by our Teaching Assitants and Notes for Revision </li>
+                            </ul>
+
+                            <!-- Button meta data  -->
+                            <div class="meta-belowlists">
+                                <!-- hours if study -->
+                                <div id="meta1">
+                                    <span>100+</span>
+                                    <p>average hours of learning per course</p>
+                                </div>
+                                <!-- Practice Problems -->
+                                <div id="meta2">
+                                    <span>50+</span>
+                                    <p>practice problems in each course</p>
+                                </div>
+                                <!-- Projects -->
+                                <div id="meta3">
+                                    <span>10+</span>
+                                    <p>projects per course</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- RHS contains image of the page -->
+                        <div id="right-guide">
+                            <img src="/assets/Image/guide-one-stop.png" alt="">
+                        </div>
+                </div>
+            
+                <!-- Page 2 : Doubt Page -->
+                <div id="doubt-page" class="section">
+                    <div id="left-guide">
+
+                        <header-one-stop >
+                            Doubt Resolution
+                        </header-one-stop>
+                        
+                        <div id="sub-header-one-stop">
+                            Clear your doubts with ease with live 1:1 mentor support.
+                        </div>
+                        
+                        <div id="desc-one-page">
+                            In case you have any doubt at any time while you are watching a 
+                            video or solving a question - We have you covered!
+                            <br> <br>
+                            We have a network of dedicated teaching assistants to make 
+                            sure your doubts get resolved quickly and you dont miss on deadlines.
+                        </div>
+
+                        <div class="meta-belowlists">
+                            <div id="meta1">
+                                <span>40 min</span>
+                                <p>avg. doubt resolution time</p>
+                            </div>
+                            <div id="meta2">
+                                <span>100+</span>
+                                <p>doubts resolved per hour</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="right-guide">
+                        <img src="/assets/Image/doubt-page.png" alt="">
+                    </div>
+                </div>
+                
+                <!-- Page 3: code studio page -->
+                <div id="studio-page" class="section">
+                        <div id="left-guide">
+                                <header-one-stop >
+                                    Coding Ninjas Studio
+                                </header-one-stop>
+                            
+                                <div id="sub-header-one-stop">
+                                    A platform to help you practice, compete & get ready for interviews.
+                                </div>
+                            
+                                <div id="desc-one-page">
+                                    A place for aspiring and experienced programmers to prepare for tech interviews,
+                                     practice problems, compete in challenges, discuss and stay up to date with the latest developments in the tech world.
+                                     <br><br><br>
+                                     Our expert designed curated guided paths will help you save time and energy to 
+                                     figure out which coding questions to be solved and give you a perfect sequence to maximise your 
+                                     learning experience.
+                                </div>
+
+                                <div class="meta-belowlists">
+                                    <div id="meta1">
+                                        <span>500+</span>
+                                        <p>Interview problems with solutions</p>
+                                    </div>
+                                    <div id="meta2">
+                                        <span>250+</span>
+                                        <p>Interview experiences</p>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div id="right-guide">
+                            <img src="/assets/Image/studio.png" alt="">
+                        </div>
+                </div>
+
+                <!-- Page 4 : Mock Interview Page -->
+                <div id="mock-interview-page" class="section">
+                    <div id="left-guide">
+                            <header-one-stop >
+                                Mock Interview
+                            </header-one-stop>
+                        
+                            <div id="sub-header-one-stop">
+                                Mock Interviews to help you get prepared for your real interview
+                            </div>
+                        
+                            <div id="desc-one-page">
+                                Industry experts from top product companies like Amazon, Facebook, 
+                                Google and working in the US will take your mock interviews.
+                                The focus will be on both technical and interpersonal skills. 
+                                Get instant feedback at the end of the interview.
+
+                            </div>
+
+                            <div class="meta-belowlists">
+                                <div id="meta1">
+                                    <span>10</span>
+                                    <p>Mock Interviews (with selected course plans)</p>
+                                </div>
+                                <div id="meta2">
+                                    <span>500+</span>
+                                    <p>Industry Mentors</p>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div id="right-guide">
+                        <img src="/assets/Image/mock-interview.png" alt="">
+                    </div>
+                </div>
+
+                <!-- Page 5 Placements page -->
+                <div id="placements-page" class="section">
+                    <div id="left-guide">
+                            <header-one-stop >
+                                Placement cell
+                            </header-one-stop>
+                        
+                            <div id="sub-header-one-stop">
+                                Placement Cell - A dedicated team to help you land the best opportunities
+                            </div>
+                        
+                            <div id="desc-one-page">
+                                Curated openings and industry referrals to ensure you have access to the best opportunities out there.
+                                <br><br>
+                                Our placement cell works closely with you to help you reach closer to your professional goals
+                            </div>
+
+                            <div class="meta-belowlists">
+                                <div id="meta1">
+                                    <span>7.6 LPA</span>
+                                    <p>Average CTC</p>
+                                </div>
+                                <div id="meta2">
+                                    <span>300+</span>
+                                    <p>Hiring partners</p>
+                                </div>
+                                <div id="meta3">
+                                    <span>10+</span>
+                                    <p>projects per course</p>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div id="right-guide">
+                        <img src="/assets/Image/placement.png" alt="">
+                    </div>
+                </div>
+
+                <!-- Page 6 : Free Resources -->
+                <div id="free-resources-page" class="section">
+                    <div id="left-guide">
+                            <header-one-stop >
+                                Free Resources
+                            </header-one-stop>
+                        
+                            <div id="sub-header-one-stop">
+                                Tons of resources to enable you to learn for free & stay up to date
+                            </div>
+                        
+                            <div id="desc-one-page">
+                                We regularly conduct webinars & coding events on various topics to answer your
+                                 burning questions & to keep you up to date with the latest happenings in the tech world.
+                                 <br><br><br>
+                                A blog with the latest articles to ensure you are reading & constantly in touch with your interest areas.
+                            </div>
+
+                            <div class="meta-belowlists">
+                                <div id="meta1">
+                                    <span>15+</span>
+                                    <p>events conducted every month</p>
+                                </div>
+                                <div id="meta2">
+                                    <span>30+</span>
+                                    <p>articles published every month</p>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div id="right-guide">
+                        <img src="/assets/Image/free-resource.png" alt="">
+                    </div>
+           
+                </div>
+
+        </section>
+
+
+        <!-- Course  -->
+
+        <section class="course-section">
+            <!-- heading  -->
+            <div class="course-heading">
+                Explore our courses
+            </div>
+
+
+            <!-- Section 1 : Recommended courses -->
+            <div id="recommended-course">
+                <h2>Recommended Courses</h2>
+                 
+                <!-- 2 courses  -->
+                <div class="courses-recommended">
+
+                    <!-- Link to the box -->
+                    <a href="" class="link-to-course">
+
+                        <!-- Course Box -->
+                        <div class="course-box">
+
+                            <!-- Course box used everywhere for Course Dislay -->
+                            <section class="heading-course-box">
+                                <div>
+                                    <!-- Course heading and sub heading -->
+                                    <p id="head-course-box">Full Stack</p>
+                                    <p id="sub-head-course-box">MERN Stack</p>
+                                </div>
+                                <!-- course Image -->
+                                <img src="/assets/Image/mern.webp" alt="loading">
+                               
+                            </section>
+                            <!-- course description -->
+                            <section class="footer-course-box">
+                                <i class="fas fa-clock"></i>
+                                <!-- Duration -->
+                                <span id="time-of-course">140+ hours</span>
+                                <i class="fa-solid fa-book-open"></i>
+                                <!-- Projects -->
+                                <span>6+ projects</span>
+                                <!-- Rating -->
+                                <div class="rating-course-box">
+                                    <span>4.8</span>
+                                    <img src="/assets/Image/rating-star.svg" alt="">
+                                    <span>(2k+ students)</span>
+                                </div>
+                            </section>
+                        </div>
+                    </a>
+
+                    <a href="" class="link-to-course">
+                        <div class="course-box">
+                            <section class="heading-course-box">
+                                <div>
+                                    <p id="head-course-box">Data structures and algorithm</p>
+                                    <p id="sub-head-course-box">Basic of c++ with DSA</p>
+                                </div>
+                                <img src="/assets/Image/cpp.png" alt="">
+                               
+                            </section>
+                            <section class="footer-course-box">
+                                <i class="fas fa-clock"></i>
+                                <span id="time-of-course">60+ hours</span>
+                                <i class="fa-solid fa-book-open"></i>
+                                <span>6+ projects</span>
+                                <div class="rating-course-box">
+                                    <span>4.8</span>
+                                    <img src="/assets/Image/rating-star.svg" alt="">
+                                    <span>(12k+ students)</span>
+                                </div>
+                            </section>
+                        </div>
+                    </a>
+
+                </div>
+                
+            </div>
+
+
+            <!--  All courses
+                  with Navbar made using Link <a> tag
+                 on click it would display a section
+            -->
+            <div class="all-courses">
+                <!-- heading -->
+                <h4 class="heading-all-courses">
+                    All Courses
+                </h4>
+
+                <div class="all-course-body-section">
+
+                    <!--  
+                        Navbar made using a-tag
+                        Different course page have different id's and on clicking link that particular tag gets active
+                        on active the current page gets visible
+                    -->
+                    
+                    <navbar-course id="navbar-course">
+                        <a id="auto-clicks" href="#dsa">Data Structures and Algorithm</a>
+                        <a href="#cc">Competitive Coding</a>
+                        <a href="#interview">Interview Preparation</a>
+                        <a href="#data-science">Data Analytics</a>
+                        <a href="#web">Web Development</a>
+                    </navbar-course>
+                    <hr>
+
+                    <!-- 
+                        pages
+                        All pages have different courses based on the type
+                        initially the course section is invisible , only navbar is vivible
+                    -->
+
+                    <div id="dsa" class="section-course">
+                        <div class="body-section-course">
+                            <a href="" class="link-to-course">
+
+                                <!-- Course box : same as the box used above -->
+                                <div class="course-box">
+                                    <section class="heading-course-box">
+                                        <div>
+                                            <p id="sub-head-course-box">Basic of python with Data Structures and Algorithm</p>
+                                        </div>
+                                        <img src="/assets/Image/python.webp" alt="">
+                                       
+                                    </section>
+                                    <!-- Course box : same as the box used above -->
+                                    <section class="footer-course-box">
+                                        <i class="fas fa-clock"></i>
+                                        <span id="time-of-course">140+ hours</span>
+                                        <i class="fa-solid fa-book-open"></i>
+                                        <span>6+ projects</span>
+                                        <div class="rating-course-box">
+                                            <span>4.8</span>
+                                            <img src="/assets/Image/rating-star.svg" alt="">
+                                            <span>(2k+ students)</span>
+                                        </div>
+                                    </section>
+                                </div>
+                            </a>
+<!-- Course box : same as the box used above -->
+                            <a href="" class="link-to-course">
+                                <div class="course-box">
+                                    <section class="heading-course-box">
+                                        <div>
+                                            <p id="sub-head-course-box">Basic of C++ with Data Structures and Algorithm</p>
+                                        </div>
+                                        <img src="/assets/Image/cpp.png" alt="">
+                                       
+                                    </section>
+                                    <section class="footer-course-box">
+                                        <i class="fas fa-clock"></i>
+                                        <span id="time-of-course">140+ hours</span>
+                                        <i class="fa-solid fa-book-open"></i>
+                                        <span>6+ projects</span>
+                                        <div class="rating-course-box">
+                                            <span>4.8</span>
+                                            <img src="/assets/Image/rating-star.svg" alt="">
+                                            <span>(2k+ students)</span>
+                                        </div>
+                                    </section>
+                                </div>
+                            </a>
+
+                            <a href="" class="link-to-course">
+                                <div class="course-box">
+                                    <section class="heading-course-box">
+                                        <div>
+                                            <p id="sub-head-course-box">Basic of Java with Data Structures and Algorithm</p>
+                                        </div>
+                                        <img src="/assets/Image/java.jpg" alt="">
+                                       
+                                    </section>
+                                    <section class="footer-course-box">
+                                        <i class="fas fa-clock"></i>
+                                        <span id="time-of-course">140+ hours</span>
+                                        <i class="fa-solid fa-book-open"></i>
+                                        <span>6+ projects</span>
+                                        <div class="rating-course-box">
+                                            <span>4.8</span>
+                                            <img src="/assets/Image/rating-star.svg" alt="">
+                                            <span>(2k+ students)</span>
+                                        </div>
+                                    </section>
+                                </div>
+                            </a>
+        
+        
+                        </div>
+                    </div>
+
+                    <div id="cc" class="section-course">
+                        <div class="body-section-course">
+                            <a href="" class="link-to-course">
+                                <div class="course-box">
+                                    <section class="heading-course-box">
+                                        <div>
+                                            <p id="sub-head-course-box">Competitive Programming</p>
+                                        </div>
+                                        <img src="/assets/Image/cp.webp" alt="">
+                                       
+                                    </section>
+                                    <section class="footer-course-box">
+                                        <i class="fas fa-clock"></i>
+                                        <span id="time-of-course">140+ hours</span>
+                                        <i class="fa-solid fa-book-open"></i>
+                                        <span>6+ projects</span>
+                                        <div class="rating-course-box">
+                                            <span>4.8</span>
+                                            <img src="/assets/Image/rating-star.svg" alt="">
+                                            <span>(2k+ students)</span>
+                                        </div>
+                                    </section>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="interview" class="section-course">
+                        <div class="body-section-course">
+                            <a href="" class="link-to-course">
+                                <div class="course-box">
+                                    <section class="heading-course-box">
+                                        <div>
+                                            <p id="head-course-box"></p>
+                                            <p id="sub-head-course-box">Operating System</p>
+                                        </div>
+                                        <img src="/assets/Image/interview.jpg" alt="">
+                                       
+                                    </section>
+                                    <section class="footer-course-box">
+                                        <i class="fas fa-clock"></i>
+                                        <span id="time-of-course">140+ hours</span>
+                                        <i class="fa-solid fa-book-open"></i>
+                                        <span>6+ projects</span>
+                                        <div class="rating-course-box">
+                                            <span>4.8</span>
+                                            <img src="/assets/Image/rating-star.svg" alt="">
+                                            <span>(2k+ students)</span>
+                                        </div>
+                                    </section>
+                                </div>
+                            </a>
+                            <a href="" class="link-to-course">
+                                <div class="course-box">
+                                    <section class="heading-course-box">
+                                        <div>
+                                            <p id="sub-head-course-box">Databse Management System</p>
+                                        </div>
+                                        <img src="/assets/Image/interview.jpg" alt="">
+                                       
+                                    </section>
+                                    <section class="footer-course-box">
+                                        <i class="fas fa-clock"></i>
+                                        <span id="time-of-course">140+ hours</span>
+                                        <i class="fa-solid fa-book-open"></i>
+                                        <span>6+ projects</span>
+                                        <div class="rating-course-box">
+                                            <span>4.8</span>
+                                            <img src="/assets/Image/rating-star.svg" alt="">
+                                            <span>(2k+ students)</span>
+                                        </div>
+                                    </section>
+                                </div>
+                            </a>
+                            <a href="" class="link-to-course">
+                                <div class="course-box">
+                                    <section class="heading-course-box">
+                                        <div>
+                                            <p id="sub-head-course-box">Aptitude</p>
+                                        </div>
+                                        <img src="/assets/Image/interview.jpg" alt="">
+                                       
+                                    </section>
+                                    <section class="footer-course-box">
+                                        <i class="fas fa-clock"></i>
+                                        <span id="time-of-course">140+ hours</span>
+                                        <i class="fa-solid fa-book-open"></i>
+                                        <span>6+ projects</span>
+                                        <div class="rating-course-box">
+                                            <span>4.8</span>
+                                            <img src="/assets/Image/rating-star.svg" alt="">
+                                            <span>(2k+ students)</span>
+                                        </div>
+                                    </section>
+                                </div>
+                            </a>
+                            <a href="" class="link-to-course">
+                                <div class="course-box">
+                                    <section class="heading-course-box">
+                                        <div>
+                                            <p id="sub-head-course-box">System Design</p>
+                                        </div>
+                                        <img src="/assets/Image/interview.jpg" alt="">
+                                       
+                                    </section>
+                                    <section class="footer-course-box">
+                                        <i class="fas fa-clock"></i>
+                                        <span id="time-of-course">140+ hours</span>
+                                        <i class="fa-solid fa-book-open"></i>
+                                        <span>6+ projects</span>
+                                        <div class="rating-course-box">
+                                            <span>4.8</span>
+                                            <img src="/assets/Image/rating-star.svg" alt="">
+                                            <span>(2k+ students)</span>
+                                        </div>
+                                    </section>
+                                </div>
+                            </a>
+                            <a href="" class="link-to-course">
+                                <div class="course-box">
+                                    <section class="heading-course-box">
+                                        <div>
+                                            <p id="sub-head-course-box">Computer Network</p>
+                                        </div>
+                                        <img src="/assets/Image/interview.jpg" alt="">
+                                       
+                                    </section>
+                                    <section class="footer-course-box">
+                                        <i class="fas fa-clock"></i>
+                                        <span id="time-of-course">140+ hours</span>
+                                        <i class="fa-solid fa-book-open"></i>
+                                        <span>6+ projects</span>
+                                        <div class="rating-course-box">
+                                            <span>4.8</span>
+                                            <img src="/assets/Image/rating-star.svg" alt="">
+                                            <span>(2k+ students)</span>
+                                        </div>
+                                    </section>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="data-science" class="section-course">
+                        <div class="body-section-course">
+                            <a href="" class="link-to-course">
+                                <div class="course-box">
+                                    <section class="heading-course-box">
+                                        <div>
+                                            <p id="sub-head-course-box">Data Analytics Course</p>
+                                        </div>
+                                        <img src="/assets/Image/ml.png" alt="">
+                                       
+                                    </section>
+                                    <section class="footer-course-box">
+                                        <i class="fas fa-clock"></i>
+                                        <span id="time-of-course">140+ hours</span>
+                                        <i class="fa-solid fa-book-open"></i>
+                                        <span>6+ projects</span>
+                                        <div class="rating-course-box">
+                                            <span>4.8</span>
+                                            <img src="/assets/Image/rating-star.svg" alt="">
+                                            <span>(2k+ students)</span>
+                                        </div>
+                                    </section>
+                                </div>
+                            </a>
+                            <a href="" class="link-to-course">
+                                <div class="course-box">
+                                    <section class="heading-course-box">
+                                        <div>
+                                            <p id="sub-head-course-box">Machine learning </p>
+                                        </div>
+                                        <img src="/assets/Image/amazon.jpg" alt="">
+                                       
+                                    </section>
+                                    <section class="footer-course-box">
+                                        <i class="fas fa-clock"></i>
+                                        <span id="time-of-course">140+ hours</span>
+                                        <i class="fa-solid fa-book-open"></i>
+                                        <span>6+ projects</span>
+                                        <div class="rating-course-box">
+                                            <span>4.8</span>
+                                            <img src="/assets/Image/rating-star.svg" alt="">
+                                            <span>(2k+ students)</span>
+                                        </div>
+                                    </section>
+                                </div>
+                            </a>
+                            <a href="" class="link-to-course">
+                                <div class="course-box">
+                                    <section class="heading-course-box">
+                                        <div>
+                                            <p id="sub-head-course-box">Data Science and Machine Learning</p>
+                                        </div>
+                                        <img src="/assets/Image/cp.webp" alt="">
+                                       
+                                    </section>
+                                    <section class="footer-course-box">
+                                        <i class="fas fa-clock"></i>
+                                        <span id="time-of-course">140+ hours</span>
+                                        <i class="fa-solid fa-book-open"></i>
+                                        <span>6+ projects</span>
+                                        <div class="rating-course-box">
+                                            <span>4.8</span>
+                                            <img src="/assets/Image/rating-star.svg" alt="">
+                                            <span>(2k+ students)</span>
+                                        </div>
+                                    </section>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="web" class="section-course">
+                        <div class="body-section-course">
+                            <a href="" class="link-to-course">
+                                <div class="course-box">
+                                    <section class="heading-course-box">
+                                        <div>
+                                            <p id="sub-head-course-box">Java Web Bootcamp with Spring boot</p>
+                                        </div>
+                                        <img src="/assets/Image/java.jpg" alt="">
+                                       
+                                    </section>
+                                    <section class="footer-course-box">
+                                        <i class="fas fa-clock"></i>
+                                        <span id="time-of-course">140+ hours</span>
+                                        <i class="fa-solid fa-book-open"></i>
+                                        <span>6+ projects</span>
+                                        <div class="rating-course-box">
+                                            <span>4.8</span>
+                                            <img src="/assets/Image/rating-star.svg" alt="">
+                                            <span>(2k+ students)</span>
+                                        </div>
+                                    </section>
+                                </div>
+                            </a>
+                            <a href="" class="link-to-course">
+                                <div class="course-box">
+                                    <section class="heading-course-box">
+                                        <div>
+                                            <p id="sub-head-course-box">MERN Stack</p>
+                                        </div>
+                                        <img src="/assets/Image/mern.webp" alt="">
+                                       
+                                    </section>
+                                    <section class="footer-course-box">
+                                        <i class="fas fa-clock"></i>
+                                        <span id="time-of-course">140+ hours</span>
+                                        <i class="fa-solid fa-book-open"></i>
+                                        <span>6+ projects</span>
+                                        <div class="rating-course-box">
+                                            <span>4.8</span>
+                                            <img src="/assets/Image/rating-star.svg" alt="">
+                                            <span>(2k+ students)</span>
+                                        </div>
+                                    </section>
+                                </div>
+                            </a>
+                            <a href="" class="link-to-course">
+                                <div class="course-box">
+                                    <section class="heading-course-box">
+                                        <div>
+                                            <p id="sub-head-course-box">Front End Development React</p>
+                                        </div>
+                                        <img src="/assets/Image/amazon.jpg" alt="">
+                                       
+                                    </section>
+                                    <section class="footer-course-box">
+                                        <i class="fas fa-clock"></i>
+                                        <span id="time-of-course">140+ hours</span>
+                                        <i class="fa-solid fa-book-open"></i>
+                                        <span>6+ projects</span>
+                                        <div class="rating-course-box">
+                                            <span>4.8</span>
+                                            <img src="/assets/Image/rating-star.svg" alt="">
+                                            <span>(2k+ students)</span>
+                                        </div>
+                                    </section>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section> 
+
+
+        <!-- Queries from Ninjas -->
+        <section class="queries">
+            <!-- LHS contains static data -->
+            <div class="lhs-queries">
+                <!-- heading -->
+                <h1>Have any queries ?</h1>
+                <p>Get a free counselling session from our experts</p>
+                <section id="contact-details-query">
+                        <i class="fas fa-phone"></i>
+                        <!-- semantic tag nonIcon used :user defined tag -->
+                    <nonIcon>
+                        <!-- description donot have icons -->
+                        <p> call us on our toll free number</p>
+                        <h1>1800-123-3586</h1>
+                    </nonIcon>
+                    
+                </section>
+                
+            </div>
+
+            <!-- rhs have form -->
+            <div class="rhs-queries">
+                <!-- 
+                    form have different data type based on inout
+                 -->
+                <form action="" method="post">
+                    <input type="text" placeholder="Contact number *"> <br>
+                    <input type="text" placeholder="First Name *"> <br>
+                    <input type="email" placeholder="Email Address *"> <br>
+                    <input type="text" placeholder="Graduation Year *"> <br>
+                    <button type="submit">Request Callback</button>
+                </form>
+            </div>
+        </section>
+
+
+        <!-- News Section -->
+        <section class="news-coding-ninjas">
+
+            <!-- heading News -->
+            <coding-news-heading>
+                <h2>Coding Ninjas in the News</h2>
+            </coding-news-heading>
+
+            <div class="body-news-section">
+
+                <!-- 
+                    Left and Right icon to move the carausel
+                    Transition is used 
+                -->
+                <label id="left-scroll-icon" class="scroll-button-label" for="scroll-toggle">
+                    <!-- Left Icon -->
+                    <i class="fas fa-circle-chevron-left"></i>
+                </label>
+                <label  id="right-scroll-icon" class="scroll-button-label" for="scroll-toggle">
+                    <!-- Right Icon -->
+                    <i class="fas fa-circle-chevron-right"></i>
+                </label>
+
+                <!-- 
+                    check box is used 
+                    when click at the checkbox the items transform
+                -->
+                <input type="checkbox" id="scroll-toggle" class="scroll-checkbox">
+
+                <!--  body of the scroller -->
+                <div class="scroll-container">
+
+                <div class="scroll-content">
+                    <!--Scroll item 1
+                        Initial View
+                    -->
+                    <div class="scroll-item">
+
+                        <!-- News box in each container
+                            All News box are same having Image and Name
+                        -->
+                        <div class="news-box">
+                            <img src="/assets/Image/news1.png" alt="">
+                            <p>Coding Ninjas</p>
+                        </div>
+                        <div class="news-box">
+                            <img src="/assets/Image/news2.png" alt="">
+                            <p>India Today</p>
+                        </div>
+                        <div class="news-box">
+                            <img src="/assets/Image/news3.png" alt="">
+                            <p>Learn Coding from ninjas</p>
+                        </div>
+                        <div class="news-box">
+                            <img src="/assets/Image/news4.png" alt="">
+                            <p>News Heading</p>
+                        </div>
+                        <div class="news-box">
+                            <img src="/assets/Image/news5.png" alt="">
+                            <p>Ninja Turns learners to teachers</p>
+                        </div>
+                        <div class="news-box">
+                            <img src="/assets/Image/news6.png" alt="">
+                            <p>Learn Coding from ninjas</p>
+                        </div>
+                        <div class="news-box">
+                            <img src="/assets/Image/news7.png" alt="">
+                            <p>Coding Ninjas</p>
+                        </div>
+                        <div class="news-box">
+                            <img src="/assets/Image/news2.png" alt="">
+                            <p>Be a Ninja</p>
+                        </div>
+                    </div>
+
+                    <!--  Item 2 i.e. on scroll this 2nd secton shows up -->
+                    <div class="scroll-item">
+                        <div class="news-box">
+                            <img src="/assets/Image/news1.png" alt="">
+                            <p>Coding Ninjas</p>
+                        </div>
+                        <div class="news-box">
+                            <img src="/assets/Image/news2.png" alt="">
+                            <p>India Today</p>
+                        </div>
+                        <div class="news-box">
+                            <img src="/assets/Image/news3.png" alt="">
+                            <p>Learn Coding from ninjas</p>
+                        </div>
+                        <div class="news-box">
+                            <img src="/assets/Image/news4.png" alt="">
+                            <p>News Heading</p>
+                        </div>
+                        <div class="news-box">
+                            <img src="/assets/Image/news5.png" alt="">
+                            <p>Ninja Turns learners to teachers</p>
+                        </div>
+                        <div class="news-box">
+                            <img src="/assets/Image/news6.png" alt="">
+                            <p>Learn Coding from ninjas</p>
+                        </div>
+                        <div class="news-box">
+                            <img src="/assets/Image/news7.png" alt="">
+                            <p>Coding Ninjas</p>
+                        </div>
+                        <div class="news-box">
+                            <img src="/assets/Image/news2.png" alt="">
+                            <p>Be a Ninja</p>
+                        </div>
+                    </div>
+                    </div>
+                
+                </div>
+                </div>
+            </div>
+
+            <div class="news-iframe">
+                <section id="frame-video">
+                    <iframe
+                        width="100%" height="250" 
+                        src="https://www.youtube.com/embed/vEnefxh8o_k" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                     </iframe>
+                </section>
+                <section id="description-frame">
+
+                    <div id="header-news-frame">
+                        <img src="/assets/Image/news3.png" alt="loading...">
+                        <p>India Inc on Reviving Our Economy NewsX & BW Special</p>
+                    </div>
+                    
+                    <p>
+                        Ankush Singla, Co-Founder, Coding Ninjas joins a panel 
+                        discussion with other industry stalwarts to talk about the 
+                        economy in the times of COVID-19.
+                    </p>
+                </section>
+            </div>
+
+        </section>
+
+
+        <!--  Upcoming events 
+            Animation used to scroll the elements in an infinite way
+            +Inovation
+        -->
+        <section id="upcoming-events">
+
+            <!-- Heading -->
+            <upcomingEventsHeader>
+                <h1>Upcoming Events</h1>
+            </upcomingEventsHeader>
+
+            <upcomingEventsContainer>
+
+                <!-- 
+                    Container have news boxes and each move using animaition
+                 -->
+                <div class="event">
+                    <!-- box
+                        with description and Images
+                    -->
+                    <div id="upcoming-event-box">
+                        <div id="upcoming-event-header-box">
+                            <img src="/assets/Image/walmart.png" alt="">
+                        </div>
+                        <div id="upcoming-event-footer-box">
+                            <p id="header-box-events">
+                                How to get high paying job at MAANG ?
+                            </p>
+                            <p id="starts-on">
+                                starts on
+                            </p>
+                            <p id="start-date">
+                                07:00PM , 10th October 2023
+                            </p>
+                            <hr>
+                            <!-- Students who are interested in the event : Avatar -->
+                            <div id="avatars-joining-event">
+                                <img src="/assets/Image/avatar.jpg" alt="">
+                                <img src="/assets/Image/student1.png" alt="">
+                                <img src="/assets/Image/student2.png" alt="">
+                                <img src="/assets/Image/avatar.jpg" alt="">
+                                <img src="/assets/Image/avatar.jpg" alt="">
+                            </div>
+                            <p>and <strong>40</strong> others are participating</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- All event are same -->
+                <div class="event">
+                    <div id="upcoming-event-box">
+                        <div id="upcoming-event-header-box">
+                            <img src="/assets/Image/amazon.jpg" alt="">
+                        </div>
+                        <div id="upcoming-event-footer-box">
+                            <p id="header-box-events">
+                                How to get high paying job at Amazon ?
+                            </p>
+                            <p id="starts-on">
+                                starts on
+                            </p>
+                            <p id="start-date">
+                                07:00PM , 11th October 2023
+                            </p>
+                            <hr>
+                            <div id="avatars-joining-event">
+                                <img src="/assets/Image/avatar.jpg" alt="">
+                                <img src="/assets/Image/student1.png" alt="">
+                                <img src="/assets/Image/student2.png" alt="">
+                                <img src="/assets/Image/avatar.jpg" alt="">
+                                <img src="/assets/Image/avatar.jpg" alt="">
+                            </div>
+                            <p>and <strong>485</strong> others are participating</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div id="upcoming-event-box">
+                        <div id="upcoming-event-header-box">
+                            <img src="/assets/Image/Facebook.png" alt="">
+                        </div>
+                        <div id="upcoming-event-footer-box">
+                            <p id="header-box-events">
+                                How to get high paying job at Facebook ?
+                            </p>
+                            <p id="starts-on">
+                                starts on
+                            </p>
+                            <p id="start-date">
+                                02:00PM , 10th October 2023
+                            </p>
+                            <hr>
+                            <div id="avatars-joining-event">
+                                <img src="/assets/Image/avatar.jpg" alt="">
+                                <img src="/assets/Image/student1.png" alt="">
+                                <img src="/assets/Image/student2.png" alt="">
+                                <img src="/assets/Image/avatar.jpg" alt="">
+                                <img src="/assets/Image/avatar.jpg" alt="">
+                            </div>
+                            <p>and <strong>85</strong> others are participating</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div id="upcoming-event-box">
+                        <div id="upcoming-event-header-box">
+                            <img src="/assets/Image/adobe.jpg" alt="">
+                        </div>
+                        <div id="upcoming-event-footer-box">
+                            <p id="header-box-events">
+                                How to get high paying job at Adobe ?
+                            </p>
+                            <p id="starts-on">
+                                starts on
+                            </p>
+                            <p id="start-date">
+                                07:00PM , 10th October 2023
+                            </p>
+                            <hr>
+                            <div id="avatars-joining-event">
+                                <img src="/assets/Image/avatar.jpg" alt="">
+                                <img src="/assets/Image/student1.png" alt="">
+                                <img src="/assets/Image/student2.png" alt="">
+                                <img src="/assets/Image/avatar.jpg" alt="">
+                                <img src="/assets/Image/avatar.jpg" alt="">
+                            </div>
+                            <p>and <strong>430</strong> others are participating</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div id="upcoming-event-box">
+                        <div id="upcoming-event-header-box">
+                            <img src="/assets/Image/google-logo.png" alt="">
+                        </div>
+                        <div id="upcoming-event-footer-box">
+                            <p id="header-box-events">
+                                How to get high paying job at Google ?
+                            </p>
+                            <p id="starts-on">
+                                starts on
+                            </p>
+                            <p id="start-date">
+                                07:00PM , 10th October 2023
+                            </p>
+                            <hr>
+                            <div id="avatars-joining-event">
+                                <img src="/assets/Image/avatar.jpg" alt="">
+                                <img src="/assets/Image/student1.png" alt="">
+                                <img src="/assets/Image/student2.png" alt="">
+                                <img src="/assets/Image/avatar.jpg" alt="">
+                                <img src="/assets/Image/avatar.jpg" alt="">
+                            </div>
+                            <p>and <strong>90</strong> others are participating</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div id="upcoming-event-box">
+                        <div id="upcoming-event-header-box">
+                            <img src="/assets/Image/walmart.png" alt="">
+                        
+                        </div>
+                        <div id="upcoming-event-footer-box">
+                            <p id="header-box-events">
+                                How to get high paying job at Walmart ?
+                            </p>
+                            <p id="starts-on">
+                                starts on
+                            </p>
+                            <p id="start-date">
+                                07:00PM , 10th October 2023
+                            </p>
+                            <hr>
+                            <div id="avatars-joining-event">
+                                <img src="/assets/Image/avatar.jpg" alt="">
+                                <img src="/assets/Image/student1.png" alt="">
+                                <img src="/assets/Image/student2.png" alt="">
+                                <img src="/assets/Image/avatar.jpg" alt="">
+                                <img src="/assets/Image/avatar.jpg" alt="">
+                            </div>
+                            <p>and <strong>40</strong> others are participating</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div id="upcoming-event-box">
+                        <div id="upcoming-event-header-box">
+                            <img src="/assets/Image/news1.png" alt="">
+                        </div>
+                        <div id="upcoming-event-footer-box">
+                            <p id="header-box-events">
+                                How to get high paying job at BW ?
+                            </p>
+                            <p id="starts-on">
+                                starts on
+                            </p>
+                            <p id="start-date">
+                                07:00PM , 10th October 2023
+                            </p>
+                            <hr>
+                            <div id="avatars-joining-event">
+                                <img src="/assets/Image/avatar.jpg" alt="">
+                                <img src="/assets/Image/student1.png" alt="">
+                                <img src="/assets/Image/student2.png" alt="">
+                                <img src="/assets/Image/avatar.jpg" alt="">
+                                <img src="/assets/Image/avatar.jpg" alt="">
+                            </div>
+                            <p>and <strong>40</strong> others are participating</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div id="upcoming-event-box">
+                        <div id="upcoming-event-header-box">
+                            <img src="/assets/Image/deshaw.jpg" alt="">
+                        </div>
+                        <div id="upcoming-event-footer-box">
+                            <p id="header-box-events">
+                                How to get high paying job at DE SHAW ?
+                            </p>
+                            <p id="starts-on">
+                                starts on
+                            </p>
+                            <p id="start-date">
+                                07:00PM , 10th October 2023
+                            </p>
+                            <hr>
+                            <div id="avatars-joining-event">
+                                <img src="/assets/Image/avatar.jpg" alt="">
+                                <img src="/assets/Image/student1.png" alt="">
+                                <img src="/assets/Image/student2.png" alt="">
+                                <img src="/assets/Image/avatar.jpg" alt="">
+                                <img src="/assets/Image/avatar.jpg" alt="">
+                            </div>
+                            <p>and <strong>400</strong> others are participating</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </upcomingEventsContainer>
+
+        </section>
+        
+        <!-- upto here change colour is reqd. -->
+    </section>
+     
+    
+    <!--  Footer -->
+    <Footer>
+
+        <!--  Links of sections footer -->
+        <Footer-Links>
+            <div id="links">
+                <!-- Coding Ninja logo -->
+                <div id="logo-section">
+                    <img src="/assets/Image/coding-ninjas-logo.png" alt="">
+                </div>
+
+                <!-- section 1  -->
+                <div id="coding-ninjas-section">
+                    <p class="heading-links">Coding Ninjas</p>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms and conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Big Bounty</a></li>
+                        <li><a href="">Our Students</a></li>
+                        <li><a href="">Press release</a></li>
+                    </ul>
+                </div>
+
+                <!-- Section 2 -->
+
+                <div id="products-section">
+                    <p class="heading-links">Products</p>
+                    <ul>
+                        <li><a href="">Certificate Courses</a></li>
+                        <li><a href="">Try for free</a></li>
+                        <li><a href="">Job Bootcamp</a></li>
+                        <li><a href="">Mock interviews</a></li>
+                        <li><a href="">Hier Talent</a></li>
+                    </ul>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="community-section">
+                    <p class="heading-links">Community</p>
+                    <ul>
+                        <li><a href="">Coding Ninjas Studio</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Events</a></li>
+                        <li><a href="">Campus Ninja</a></li>
+                        <li><a href="">Affilate</a></li>
+                        <li><a href="">Scolarship Event</a></li>
+                        <li><a href="">Placement</a></li>
+                    </ul>
+                </div>
+
+                <!-- secion 4 -->
+                <div id="social-links-section">
+                    <p class="heading-links">Follow us on</p>
+                    <div id="social-icons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""> <i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-telegram"></i></a>
+                    </div>
+                    <div class="contact-us-link">
+                        <p class="heading-links"> Contact us</p>
+                        <div><i class="fas fa-phone-volume"></i> <Text> <a class="border-bottom-hover" href="">1800-358-7895</a> </Text> </div>
+                        <div><i class="fa-solid fa-envelope"></i> <Text> <a href="">contact@codingninjas.com</a> </Text> </div>
+                    </div>
+                </div>
+            </div>
+        </Footer-Links>  
+    </Footer>
+
+
+    <!-- Important links to courses and stuff -->
+    <div id="ImportantLinks">
+
+        <!-- heading -->
+        <h3>Important Links</h3>
+
+        <!-- each section contains a single line to follow
+            All links to different courses
+        -->
+        <div class="link-section-one">
+            <p>coding courses for begineers</p>
+            <a href="">introduction to c++ </a>
+            <a href="">Java with Data Structures</a>
+            <a href="">Interview Preparation for Product based companies</a>
+            <a href="">Competitive Programming</a>
+            <a href="">Python Fundamental</a>
+            <a href="">Introduction to Aptitude</a>
+        </div>
+        <div class="link-section-one">
+            <p>Advance Coding course</p>
+            <a href="">Advance Front End with react </a>
+            <a href="">Machine Learning and Deep Learning course</a>
+            <a href="">Full Stack Web development</a>
+            <a href="">Complete Artificial Intelligence and Machine learning</a>
+            <a href="">Python Fundamental</a>
+            <a href="">Introduction to Aptitude</a>
+        </div>
+        <div class="link-section-one">
+            <p>Free Trial</p>
+            <a href="">Introduction to Aptitude</a>
+            <a href="">Machine Learning and Deep Learning course</a>
+            <a href="">Machine Learning and Deep Learning course</a>
+            <a href="">Full Stack Web development</a>
+            <a href="">Python Fundamental</a>
+            <a href="">Introduction to Aptitude</a>
+        </div>
+        <div class="link-section-one">
+            <p>Free Contents</p>
+            <a href="">Interview Preparation for Product based companies</a>
+            <a href="">Competitive Programming</a>
+            <a href="">Python Fundamental</a>
+            <a href="">Introduction to Aptitude</a>
+            <a href="">Full Stack Web development</a>
+            <a href="">Full Stack Web development</a>
+            <a href="">Python Fundamental</a>
+        </div>
+    </div>
+
+
+    <!-- Bottom section for payments acceptance -->
+    <div class="bottom-payments">
+
+        <!-- Payments that are accepted Images -->
+        <div id="left-payment">
+            <p>We accept payments using :</p>
+            <img src="/assets/Image/paypal.png" alt="">
+            <img src="/assets/Image/visa.png" alt="">
+            <img src="/assets/Image/upi.webp" alt="">
+            <span id="emi">No Cost EMI</span>
+        </div>
+        <div id="right-payment">
+            <p>100% safe & secure payment </p>
+            <img src="/assets/Image/secure.jpg" alt="">
+            <img src="/assets/Image/razorpay.png" alt="">
+        </div>
+    </div>
+        
+    </body>
+    </html>

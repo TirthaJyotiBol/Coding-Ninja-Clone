@@ -1,0 +1,329 @@
+@media (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .display-none{
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+
+    #heading-cn-logo {
+        margin-left: 133%;
+    }
+
+    .user-avatar img {
+        margin-left: 345px;
+    }
+    
+    #heading-section {
+        padding-top: 14vh;
+        height: 75vh;
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #032D6B;
+    }
+
+    #left-part-heading {
+        width: 50%;
+        margin-left: 7%;
+        margin-top: 5%;
+    }
+
+    #explore-programs-button {
+        width: 75%;
+        height: 4.5rem;
+    }
+
+    #right-part-heading img {
+        height: 50vh;
+        width: 58%;
+        left: 26%;
+        margin-top: -29%;
+    }
+    #banner {
+        border: 1px solid transparent;
+        border-radius: 25px;
+        width: 85%;
+        height: 208px;
+    }
+
+    img#banner-student {
+        width: 89%;
+        margin-left: 6%;
+        height: 192px;
+    }
+    #banner-text {
+        text-align: center;
+        margin-top: 0vh;
+        font-weight: 400;
+        font-size: 27px;
+        margin-bottom: 5vh;
+    }
+
+    #placement-stats-student-comments {
+        /* height: 60vh; */
+        height: max-content;
+        width: 80vw;
+        display: flex;
+        position: sticky;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .image-container-student {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .student-image img {
+        height: 86px;
+        width: 76px;
+        top: -28%;
+        position: absolute;
+        right: 0px;
+    }
+
+    #student-box-placement:hover {
+        width: 115%;
+        height: 399px;
+        cursor: pointer;
+        transition: width 0.4s linear;
+    }
+    #student-box-placement:hover .student-image img{
+        right: 13%;
+        top: 13%;
+        height: 87%;
+        width: 18%;
+    }
+    #alumini-hear-button button {
+        height: 3rem;
+        width: 329px;
+        margin-left: 29%;
+        margin-bottom: 5%;
+        border-radius: 9px;
+    }
+   /* This might cause issue to check */
+    #placement-report img {
+        height: 80%;
+        width: 99%;
+        margin-left: 4px;
+    }
+    #company {
+        width: 78%;
+        padding-left: 12%;
+        margin-left: 5%;
+        margin-top: 4%;
+    }
+
+    #download-pdf-button a button {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 118%;
+        height: 41px;
+        font-size: 1rem;
+    }
+    .ratings {
+        padding-left: 5%;
+    }
+    .rating-box {
+        height: 41vh;
+        width: 33vw;
+    }
+
+    #one-stop-navbar {
+        margin-left: -16%;
+        margin-top: 3%;
+        width: 123%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 25px;
+        max-height: 30px;
+    }
+
+    #one-stop-navbar label {
+        margin: -1px;
+        padding-bottom: 8px;
+        font-size: 11px;
+    }
+
+    .section {
+        position: absolute;
+        top: 38%;
+        visibility: hidden;
+        display: flex;
+        margin-left: -5%;
+        width: 123%;
+    }
+
+    /* .course-section {
+        width: 100%;
+        margin-top: 20%;
+        margin-left: 6%;
+    } */
+    .course-section {
+        width: 97%;
+        margin-top: 20%;
+        margin-left: 3%;
+    }
+    .course-box {
+        max-width: 37vw;
+        width: 250px;
+        height: 170px;
+    }
+
+    .all-courses {
+        margin-left: 5%;
+        margin-top: 3%;
+        position: relative;
+        width: 84%;
+        height: 58vh;
+    }
+
+    .all-course-body-section navbar-course a {
+        font-size: 12px;
+    }
+    .section-course:target {
+        display: block;
+        width: 85%;
+        margin-left: 4%;
+    }
+    .queries {
+        width: 100%;
+        height: 54vh;
+    }    
+    .rhs-queries {
+        width: 41%;
+        margin-top: -3%;
+    }
+
+    .one-stop-platform heading {
+        margin-left: 34%;
+    }
+    .desc-header {
+        margin-left: 33%;
+    }
+    .queries .rhs-queries form input {
+        width: 254px;
+        font-size: 14px;
+        margin-top: 15px;
+        height: 14px;
+        margin-bottom: 10px;
+    }
+
+    .queries .rhs-queries form button {
+        width: 100%;
+        font-weight: 900;
+        margin-left: 1%;
+    }
+    .queries .rhs-queries form {
+        background-color: white;
+        width: 268px;
+        height: 280px;
+        margin-left: -30%;
+        padding: 12%;
+    }
+
+
+
+    /* News */
+
+    .news-coding-ninjas {
+        width: 85vw;
+        margin-left: 6%;
+        margin-bottom: 5%;
+        position: relative;
+        margin-top: 10%;
+    }
+
+    #frame-video {
+        width: 132%;
+        height: 120%;
+    }
+    #left-scroll-icon {
+        display: none;
+    }
+    #right-scroll-icon {
+        position: absolute;
+        left: 100%;
+        top: 28%;
+        font-size: 25px;
+    }
+    .news-iframe {
+        width: 100%;
+        height: 42vh;
+        margin-left: 1%;
+    }
+    #frame-video {
+        width: 82%;
+    }
+    #header-news-frame {
+        display: flex;
+        flex-direction: column;
+    }
+    #description-frame img {
+        margin-top: 5%;
+        height: 28%;
+        width: 42%;
+        margin-right: 2%;
+    }
+
+    #description-frame >p {
+        margin-left: 0%;
+    }
+    upcomingEventsContainer > div {
+        height: 216px;
+        margin-left: 20px;
+        margin-top: -0.8%;
+    }
+    #upcoming-event-header-box {
+        height: 106px;
+        width: 300px;
+    }
+    Footer-Links {
+        height: 55vh;
+    }
+    .heading-links {
+        font-size: 1px;
+    }
+    #links a {
+        color: white;
+        text-decoration: none;
+        font-size: 9.5px;
+        transition: all 0.8s ease-in-out;
+    }
+
+    #logo-section img {
+        width: 73%;
+        color: white;
+        height: 32%;
+    }
+
+    #social-links-section > #social-icons i {
+        font-size: 11px;
+    }
+
+    #emi{
+        display: none;
+    }
+
+    #left-payment p{
+        width: max-content;
+    }
+
+
+    .bottom-payments {
+        width: 57%;
+        margin-left: 8%;
+    }
+
+    .scroll-checkbox:checked + .scroll-container .scroll-content {
+        transform: translateX(-700px);
+      }
+
+}

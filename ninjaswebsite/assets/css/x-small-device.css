@@ -1,0 +1,184 @@
+@media(max-width:320px){
+    .logo {
+        margin-left: -55%;
+        height: 102%;
+        /* margin-right: 21px; */
+    }
+
+    #heading-coding-ninja {
+        margin-left: -1%;
+        font-size: 3rem;
+    }
+
+    #writing-container {
+        display: inline-block;
+        font-family: "arial";
+        font-size: 10px;
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #heading-description{
+        color: white;
+        margin-top: 24px;
+        font-size: 24px;
+        margin-left: 8%;
+        overflow-wrap: break-word;
+        flex-wrap: wrap;
+        width: 64%;
+        margin-bottom: 8px;
+        display: flex;
+        text-align: center;
+    }
+
+    
+    #explore-programs-button {
+        width: 86%;
+        height: 3.5rem;
+        margin-left: 3%;
+    }
+
+    #banner-text {
+        text-align: center;
+        margin-top: 15vh;
+        font-weight: 400;
+        font-size: 14px;
+        margin-bottom: 5vh;
+    }
+
+    #placement-stats-student-comments {
+        width: 98vw;
+        margin-left: 1%;
+    }
+
+    #alumini-hear-button button {
+        width: 301px;
+        margin-left: 4%;
+    }
+
+    #placement-report img {
+        height: 99%;
+        width: 109%;
+        margin-left: 2px;
+        margin-top: 7%;
+        display: none;
+
+    }
+    .companies {
+        padding-top: 0;
+        margin-top: -72%;
+    }
+    h3#heading-companies {
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    #company{
+        margin-left: -2%;
+    }
+    #company img {
+        height: 30px;
+        width: 84px;
+        margin: 20px;
+    }
+
+    .one-stop-platform heading {
+        margin-left: 10px;
+        font-size: 21px;
+    }
+
+    .desc-header {
+        display: none;
+    }
+
+    #one-stop-navbar label {
+        margin: 10px;
+        padding-bottom: 8px;
+        text-align: center;
+        width: 43%;
+        font-size: 9px;
+        font-weight: 600;
+        border-bottom: 1px solid red;
+    }
+
+    .scroll-checkbox:checked + .scroll-container .scroll-content {
+        transform: translateX(-300px);
+      }
+
+    .section {
+        position: absolute;
+        top: 38%;
+        visibility: hidden;
+        display: flex;
+        margin-left: -15%;
+        flex-direction: column;
+        width: 110%;
+        font-size: 9px;
+    }
+
+    #right-guide img {
+        width: 100%;
+        height: 61%;
+        margin-top: 20%;
+    }
+
+    #left-guide {
+        margin-top: 13%;
+        width: 98%;
+        height: 393px;
+    }
+
+    .course-heading {
+        margin-left: 6%;
+    }
+
+    .all-course-body-section navbar-course {
+        margin-top: 52%;
+    }
+
+    .queries .rhs-queries form {
+        margin-left: 4%;
+    }
+
+    #left-payment p {
+        width: max-content;
+        font-size: 20px;
+        margin-left: -21%;
+        text-transform: uppercase;
+    }
+
+    #upcoming-events upcomingEventsHeader h1 {
+        margin-left: 16%;
+        font-size: 20px;
+        margin-top: -54%;
+        margin-bottom: 8%;
+        text-transform: uppercase;
+    }
+
+    .image-container-student .heading-student-placement {
+        font-size: 12px;
+        margin-left: 15px;
+        margin-top: 8%;
+        width: 80%;
+    }
+
+
+
+
+
+
+
+
+
+    html{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    
+    
+    
+    
+
+}

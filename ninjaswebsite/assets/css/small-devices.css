@@ -1,0 +1,97 @@
+@media (max-width:375px){
+
+    html{
+        background-color: aliceblue;
+    }
+    #heading-section {
+        height: 105vh;
+        flex-direction: column;
+        width: 110%;
+    }
+
+    #banner {
+        display: none;
+    }
+
+    #banner-text {
+        margin-top: 14vh;
+    }
+
+    #placement-stats-student-comments {
+        width: 98vw;
+        margin-left: 6%;
+    }
+
+    #placement-report img {
+        height: 99%;
+        width: 109%;
+        margin-left: 2px;
+        margin-top: 7%;
+    }
+
+    h3#heading-companies {
+        margin-left: 9%;
+    }
+
+    .one-stop-platform {
+        height: 80vh;
+        width: 75vw;
+        margin-left: 20%;
+        margin-bottom: 5%;
+        background: white;
+    }
+    #one-stop-navbar {
+        margin-left: -67px;
+        margin-top: 3%;
+        width: 119%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 25px;
+        max-height: 49px;
+    }
+
+    Footer-Links {
+        height: max-content;
+        padding-bottom: 10%;
+        margin-top: 69px;
+        width: 110vw;
+    }
+
+    html{
+        width: 108vw;
+        overflow-x: hidden;
+    }
+
+    .change-color {
+        /* background-color: transparent; */
+        background-color: white;
+    }
+
+    #company {
+        background: white;
+    }
+    
+    body {
+        background: white;
+    }
+
+    .queries {
+        flex-direction: column;
+        background: white;
+    }
+
+    #left-payment p {
+        width: max-content;
+        font-size: 2rem;
+        margin-left: -25%;
+        text-transform: uppercase;
+    }
+
+    .scroll-checkbox:checked + .scroll-container .scroll-content {
+        transform: translateX(-350px);
+      }
+    
+    
+
+
+}
